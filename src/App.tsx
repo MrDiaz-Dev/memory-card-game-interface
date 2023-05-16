@@ -99,6 +99,7 @@ function App() {
             setP1P={setPlayer1Points}
             setP2P={setPlayer2Points}
             turnOwner={turnOwner}
+            turnCounter={turnCounter}
             setTurnOwner={setTurnOwner}
             setTurnCounter={setTurnCounter}
             gameID={gameID}

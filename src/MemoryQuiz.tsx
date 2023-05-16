@@ -18,6 +18,7 @@ const UPDATE_GAME_POINTS = gql`
   }
 `
 
+
 const MemoryQuiz = (props: {
   gameID: number;
   cardList: number[];
@@ -25,6 +26,7 @@ const MemoryQuiz = (props: {
   setP2P: number;
   turnOwner: number;
   setTurnOwner: React.Dispatch<React.SetStateAction<number>>;
+  turnCounter: number;
   setTurnCounter: React.Dispatch<React.SetStateAction<number>>;
 }) => {
 
@@ -78,6 +80,9 @@ const MemoryQuiz = (props: {
       id={it}
       isFlipped={MQState.flipped.includes(it)}
       setCardState={setCardState}
+      turnOwner={props.turnOwner}
+      turnCounter={props.turnCounter}
+      gameID={props.gameID}
     ></CardItem>
   ));
 
