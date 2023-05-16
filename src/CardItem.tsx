@@ -30,6 +30,7 @@ const CardItem = (props: {
       }}
     >
       <img src={`../public/assets/${props.id + 1}.png`} alt="" />
+      {/* <p>{props.id + 1}</p> */}
       <div ref={divRef} className="absolute top-0 left-0 w-full h-full bg-blue-500"></div>
 
     </div>
